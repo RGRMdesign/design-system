@@ -9,7 +9,7 @@
       "secondary": { "$type": "color", "$value": "#666666" }
     },
     "action": {
-      "primary": { "$type": "color", "$value": "#0066cc" },
+      "primary": { "$type": "color", "$value": "#9900cc" },
       "primaryHover": { "$type": "color", "$value": "#0052a3" }
     },
     "border": {
