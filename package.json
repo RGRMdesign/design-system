@@ -6,9 +6,9 @@
     "pnpm": ">=9.0.0"
   },
   "scripts": {
-    "dev": "pnpm run build && pnpm --filter storybook dev",
+    "dev": "pnpm run build && pnpm --filter @rgrmdesign/storybook dev",
     "build": "pnpm --filter './packages/*' run build",
-    "build:storybook": "pnpm --filter storybook run build",
+    "build:storybook": "pnpm --filter @rgrmdesign/storybook run build",
     "build:tokens": "pnpm --filter @rgrmdesign/ds-tokens run build",
     "lint": "pnpm run lint:eslint && pnpm run lint:style && pnpm run lint:html && pnpm run lint:json",
     "lint:eslint": "eslint \"packages/components-react/src/**/*.{ts,tsx}\" \"apps/storybook/src/**/*.{ts,tsx}\" \"apps/storybook/.storybook/*.ts\" --max-warnings=0",
@@ -17,7 +17,7 @@
     "lint:json": "ajv validate -s tools/schemas/design-tokens.schema.json -d packages/tokens/src/tokens/design-tokens.json --strict=false",
     "typecheck": "pnpm run typecheck:components-react && pnpm run typecheck:storybook",
     "typecheck:components-react": "pnpm --filter @rgrmdesign/ds-components-react exec tsc --noEmit -p tsconfig.json",
-    "typecheck:storybook": "pnpm --filter storybook exec tsc --noEmit -p tsconfig.json",
+    "typecheck:storybook": "pnpm --filter @rgrmdesign/storybook exec tsc --noEmit -p tsconfig.json",
     "verify": "pnpm run lint && pnpm run typecheck && pnpm run build && pnpm run build:storybook",
     "changeset": "changeset add",
     "changeset:version": "changeset version",
