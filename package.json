@@ -17,7 +17,7 @@
     "lint:eslint": "eslint \"packages/components-react/src/**/*.{ts,tsx}\" \"apps/storybook/src/**/*.{ts,tsx}\" \"apps/storybook/.storybook/*.ts\" --max-warnings=0",
     "lint:style": "stylelint \"packages/styles/src/**/*.css\"",
     "lint:html": "html-validate \"packages/components-html/snippets/**/*.html\"",
-    "lint:json": "ajv validate -s tools/schemas/design-tokens.schema.json -d packages/tokens/src/tokens/design-tokens.json --strict=false",
+    "lint:json": "ajv validate -s tools/schemas/design-tokens.schema.json -d \"packages/tokens/src/tokens/core/**/*.json\" -d \"packages/tokens/src/tokens/components/**/*.json\" -d \"packages/tokens/src/tokens/themes/**/*.json\" --strict=false",
     "typecheck": "pnpm run typecheck:components-react && pnpm run typecheck:storybook",
     "typecheck:components-react": "pnpm --filter @rgrmdesign/ds-components-react exec tsc --noEmit -p tsconfig.json",
     "typecheck:storybook": "pnpm --filter @rgrmdesign/storybook exec tsc --noEmit -p tsconfig.json",
