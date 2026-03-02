@@ -1,6 +1,6 @@
 {
   "name": "@rgrmdesign/ds-components-html",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "private": false,
   "publishConfig": {
     "access": "public"
@@ -8,5 +8,8 @@
   "scripts": {
     "build": "echo 'No build step'"
   },
-  "files": ["snippets", "README.md"]
+  "files": [
+    "snippets",
+    "README.md"
+  ]
 }
