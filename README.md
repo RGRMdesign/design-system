@@ -2,6 +2,8 @@
 
 pnpm-workspace monorepo met design tokens, styles en componenten (React + HTML). Zie [IMPLEMENTATION_NOTES.md](./IMPLEMENTATION_NOTES.md) voor architectuur.
 
+Bijdragen aan tokens vanuit Figma/Tokens Studio? Zie [CONTRIBUTING.md](./CONTRIBUTING.md) voor de volledige werkwijze.
+
 ## Vereisten
 
 - **Node.js** ≥ 22 (LTS)
@@ -54,6 +56,18 @@ Deze repo gebruikt [Changesets](https://github.com/changesets/changesets) voor p
    - version bumps
    - bijgewerkte package changelogs
 5. Na merge van die release-PR publiceert dezelfde workflow de packages.
+
+## Werkwijze Figma en Tokens Studio
+
+Gebruik bij token-wijzigingen altijd een branch + PR workflow:
+
+1. Maak in Tokens Studio wijzigingen op een branch, bijvoorbeeld `tokens/button-hover-color`.
+2. Exporteer/sync de DTCG JSON naar `packages/tokens/src/tokens/design-tokens.json`.
+3. Draai lokaal `pnpm build` en `pnpm verify`.
+4. Voeg een changeset toe met `pnpm changeset` (meestal voor `@rgrmdesign/ds-tokens` en waar relevant ook `@rgrmdesign/ds-styles`).
+5. Open een PR naar `main` en merge pas na review en geslaagde checks.
+
+Pushes direct naar `main` voor token updates zijn niet de bedoeling; release en Storybook deploy zijn gekoppeld aan de `main` flow.
 
 ### Kwaliteit van changelog-teksten
 
