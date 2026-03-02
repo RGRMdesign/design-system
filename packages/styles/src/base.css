@@ -1,0 +1,20 @@
+/**
+ * Design System – base styles
+ * Imports tokens and minimal reset. Consume @rgrmdesign/ds-styles in your app.
+ */
+@import "@rgrmdesign/ds-tokens";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--ds-typography-font-family-sans);
+  font-size: var(--ds-typography-font-size-md);
+  font-weight: var(--ds-typography-font-weight-normal);
+  color: var(--ds-color-text-primary);
+  background-color: var(--ds-color-background-primary);
+}

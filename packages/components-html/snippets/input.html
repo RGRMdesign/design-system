@@ -1,0 +1,26 @@
+<!--
+  Input – use .ds-input
+  A11y: pair with <label htmlFor="id">; use aria-invalid and aria-describedby for errors/help.
+  Import @ds/styles in your app.
+-->
+<label for="email">Email</label>
+<input
+  id="email"
+  type="email"
+  class="ds-input"
+  placeholder="you@example.com"
+  aria-describedby="email-help"
+/>
+
+<div id="email-help">We'll never share your email.</div>
+
+<!-- Invalid state -->
+<label for="email-err">Email</label>
+<input
+  id="email-err"
+  type="email"
+  class="ds-input"
+  aria-invalid="true"
+  aria-describedby="email-err-error"
+/>
+<div id="email-err-error" role="alert">Please enter a valid email.</div>

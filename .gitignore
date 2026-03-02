@@ -1,0 +1,10 @@
+node_modules
+.pnpm-store
+dist
+*.log
+.DS_Store
+storybook-static
+apps/storybook/storybook-static
+.cursor/*
+!.cursor/rules/
+!.cursor/rules/**

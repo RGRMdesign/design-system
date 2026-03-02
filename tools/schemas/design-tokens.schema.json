@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://rgrmdesign.dev/schemas/design-tokens.schema.json",
+  "title": "Design Tokens (DTCG-like structure)",
+  "type": "object",
+  "additionalProperties": {
+    "$ref": "#/definitions/node"
+  },
+  "definitions": {
+    "leafToken": {
+      "type": "object",
+      "required": ["$type", "$value"],
+      "additionalProperties": false,
+      "properties": {
+        "$type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "$value": {}
+      }
+    },
+    "groupToken": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "$ref": "#/definitions/node"
+      }
+    },
+    "node": {
+      "oneOf": [{ "$ref": "#/definitions/leafToken" }, { "$ref": "#/definitions/groupToken" }]
+    }
+  }
+}

@@ -1,0 +1,27 @@
+<!--
+  FormField – label + input + optional help/error
+  A11y: label htmlFor matches input id; aria-describedby links to help and error div ids; aria-invalid on input when error.
+  Import @ds/styles in your app.
+-->
+<div class="ds-form-field">
+  <label for="name" class="ds-form-field__label">Name *</label>
+  <div class="ds-form-field__input-wrapper">
+    <input id="name" type="text" class="ds-input" required aria-describedby="name-help" />
+  </div>
+  <div id="name-help" class="ds-form-field__help">Your full name.</div>
+</div>
+
+<!-- With error -->
+<div class="ds-form-field">
+  <label for="pw" class="ds-form-field__label">Password *</label>
+  <div class="ds-form-field__input-wrapper">
+    <input
+      id="pw"
+      type="password"
+      class="ds-input"
+      aria-invalid="true"
+      aria-describedby="pw-error"
+    />
+  </div>
+  <div id="pw-error" class="ds-form-field__error" role="alert">Password must be at least 8 characters.</div>
+</div>

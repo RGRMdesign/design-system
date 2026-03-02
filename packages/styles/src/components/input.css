@@ -1,0 +1,34 @@
+/**
+ * Design System – Input
+ * Use .ds-input. Invalid state via [aria-invalid="true"].
+ */
+.ds-input {
+  display: block;
+  width: 100%;
+  padding: var(--ds-spacing-sm) var(--ds-spacing-md);
+  font-family: var(--ds-typography-font-family-sans);
+  font-size: var(--ds-typography-font-size-md);
+  line-height: 1.25;
+  color: var(--ds-color-text-primary);
+  background-color: var(--ds-color-background-primary);
+  border: 1px solid var(--ds-color-border-default);
+  border-radius: var(--ds-radius-sm);
+}
+
+.ds-input::placeholder {
+  color: var(--ds-color-text-secondary);
+}
+
+.ds-input:focus-visible {
+  outline: var(--ds-focus-ring-width) solid var(--ds-color-action-primary);
+  outline-offset: var(--ds-focus-ring-offset);
+}
+
+.ds-input[aria-invalid="true"] {
+  border-color: var(--ds-color-border-error);
+}
+
+.ds-input[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

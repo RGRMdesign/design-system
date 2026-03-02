@@ -1,0 +1,26 @@
+{
+  "name": "@rgrmdesign/ds-components-react",
+  "version": "0.0.1",
+  "private": true,
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0"
+  },
+  "dependencies": {
+    "@rgrmdesign/ds-styles": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "react": "^19.2.4",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "dist"
+  ]
+}

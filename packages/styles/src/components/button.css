@@ -1,0 +1,47 @@
+/**
+ * Design System – Button
+ * Use .ds-button and modifiers .ds-button--primary | .ds-button--secondary
+ * States: [disabled], .is-loading. Focus ring for a11y.
+ */
+.ds-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--ds-spacing-sm) var(--ds-spacing-md);
+  font-family: var(--ds-typography-font-family-sans);
+  font-size: var(--ds-typography-font-size-md);
+  font-weight: var(--ds-typography-font-weight-normal);
+  line-height: 1.25;
+  border: 1px solid var(--ds-color-border-default);
+  border-radius: var(--ds-radius-md);
+  cursor: pointer;
+  background-color: var(--ds-color-background-secondary);
+  color: var(--ds-color-text-primary);
+}
+
+.ds-button:focus-visible {
+  outline: var(--ds-focus-ring-width) solid var(--ds-color-action-primary);
+  outline-offset: var(--ds-focus-ring-offset);
+}
+
+.ds-button--primary {
+  background-color: var(--ds-color-action-primary);
+  color: var(--ds-color-background-primary);
+  border-color: var(--ds-color-action-primary);
+}
+
+.ds-button--primary:hover:not([disabled]) {
+  background-color: var(--ds-color-action-primary-hover);
+  border-color: var(--ds-color-action-primary-hover);
+}
+
+.ds-button--secondary {
+  background-color: var(--ds-color-background-secondary);
+  color: var(--ds-color-text-primary);
+}
+
+.ds-button[disabled],
+.ds-button.is-loading {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

@@ -1,0 +1,30 @@
+/**
+ * Design System – FormField
+ * Wrapper: .ds-form-field; label, input wrapper, help and error use BEM.
+ * Associate label with input via htmlFor/id; use aria-describedby for help + error ids.
+ */
+.ds-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ds-spacing-xs);
+}
+
+.ds-form-field__label {
+  font-size: var(--ds-typography-font-size-md);
+  font-weight: var(--ds-typography-font-weight-normal);
+  color: var(--ds-color-text-primary);
+}
+
+.ds-form-field__input-wrapper {
+  display: block;
+}
+
+.ds-form-field__help {
+  font-size: var(--ds-typography-font-size-sm);
+  color: var(--ds-color-text-secondary);
+}
+
+.ds-form-field__error {
+  font-size: var(--ds-typography-font-size-sm);
+  color: var(--ds-color-border-error);
+}

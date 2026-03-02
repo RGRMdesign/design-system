@@ -1,0 +1,43 @@
+{
+  "name": "rgrm-design-system",
+  "private": true,
+  "engines": {
+    "node": ">=22.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "scripts": {
+    "dev": "pnpm run build && pnpm --filter storybook dev",
+    "build": "pnpm --filter './packages/*' run build",
+    "build:storybook": "pnpm --filter storybook run build",
+    "build:tokens": "pnpm --filter @rgrmdesign/ds-tokens run build",
+    "lint": "pnpm run lint:eslint && pnpm run lint:style && pnpm run lint:html && pnpm run lint:json",
+    "lint:eslint": "eslint \"packages/components-react/src/**/*.{ts,tsx}\" \"apps/storybook/src/**/*.{ts,tsx}\" \"apps/storybook/.storybook/*.ts\" --max-warnings=0",
+    "lint:style": "stylelint \"packages/styles/src/**/*.css\"",
+    "lint:html": "html-validate \"packages/components-html/snippets/**/*.html\"",
+    "lint:json": "ajv validate -s tools/schemas/design-tokens.schema.json -d packages/tokens/src/tokens/design-tokens.json --strict=false",
+    "typecheck": "pnpm run typecheck:components-react && pnpm run typecheck:storybook",
+    "typecheck:components-react": "pnpm --filter @rgrmdesign/ds-components-react exec tsc --noEmit -p tsconfig.json",
+    "typecheck:storybook": "pnpm --filter storybook exec tsc --noEmit -p tsconfig.json",
+    "verify": "pnpm run lint && pnpm run typecheck && pnpm run build && pnpm run build:storybook",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.3",
+    "@types/node": "^25.3.3",
+    "ajv-cli": "^5.0.0",
+    "eslint": "^9.39.3",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-storybook": "^10.2.13",
+    "globals": "^17.4.0",
+    "html-validate": "^10.9.0",
+    "pnpm": "^10.30.3",
+    "prettier": "^3.8.1",
+    "stylelint": "^17.4.0",
+    "stylelint-config-standard": "^40.0.0",
+    "typescript": "^5.0.0",
+    "typescript-eslint": "^8.56.1"
+  }
+}

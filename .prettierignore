@@ -1,0 +1,5 @@
+node_modules
+dist
+storybook-static
+.pnpm-store
+pnpm-lock.yaml

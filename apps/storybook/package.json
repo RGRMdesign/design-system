@@ -1,0 +1,25 @@
+{
+  "name": "storybook",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "storybook dev -p 6006",
+    "build": "storybook build"
+  },
+  "dependencies": {
+    "@rgrmdesign/ds-components-react": "workspace:*",
+    "@rgrmdesign/ds-styles": "workspace:*",
+    "@rgrmdesign/ds-tokens": "workspace:*",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "@storybook/addon-docs": "^10.2.13",
+    "@storybook/react": "^10.2.13",
+    "@storybook/react-vite": "^10.2.13",
+    "@vitejs/plugin-react": "^5.1.4",
+    "@whitespace/storybook-addon-html": "^9.0.0",
+    "storybook": "^10.2.13",
+    "vite": "^7.3.1"
+  }
+}

@@ -1,0 +1,51 @@
+---
+description: Genereer commit messages altijd als Conventional Commits
+alwaysApply: true
+---
+
+# Conventional Commits
+
+Bij elke commit message die je genereert MOET dit formaat gebruikt worden:
+
+`<type>(<scope>): <korte omschrijving>`
+
+Nooit een alternatief formaat gebruiken.
+
+## Toegestane types
+
+- `feat`: nieuwe functionaliteit
+- `fix`: bugfix
+- `chore`: onderhoud/tooling/config
+- `refactor`: interne codeverbetering zonder functionele wijziging
+- `docs`: documentatie
+- `test`: tests toegevoegd/aangepast
+- `ci`: CI/CD wijzigingen
+- `build`: build/dependency wijzigingen
+
+## Richtlijnen
+
+- Schrijf in het Engels
+- Gebruik lower-case voor type, scope en onderwerp
+- Houd onderwerp kort en specifiek (ongeveer 50-72 chars)
+- Geen punt aan het einde van de onderwerpregel
+- Gebruik scope altijd wanneer die duidelijk is
+- Voeg alleen een body toe als extra context nodig is
+- Als er een breaking change is, gebruik `!` na type/scope en licht dit toe in de body
+
+## Als commit message gevraagd wordt
+
+- Antwoord met een Conventional Commit voorstel dat direct te gebruiken is
+- Kies het type op basis van intentie:
+  - bug opgelost -> `fix`
+  - nieuwe capability -> `feat`
+  - tooling/config/infra -> `chore` of `ci` of `build`
+  - docs-only -> `docs`
+  - alleen tests -> `test`
+  - interne herstructurering -> `refactor`
+
+## Voorbeelden
+
+- `feat(tokens): add semantic color aliases`
+- `fix(storybook): resolve broken Button story import`
+- `chore(ci): run pnpm verify in github actions`
+- `refactor(components-react)!: rename input prop for consistency`

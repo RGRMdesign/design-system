@@ -1,0 +1,22 @@
+{
+  "name": "@rgrmdesign/ds-tokens",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "style-dictionary build --config src/build.js",
+    "watch": "style-dictionary build --config src/build.js --watch"
+  },
+  "devDependencies": {
+    "style-dictionary": "^5.3.2"
+  },
+  "main": "dist/tokens.css",
+  "exports": {
+    ".": "./dist/tokens.css",
+    "./css": "./dist/tokens.css",
+    "./tokens.json": "./dist/tokens.json"
+  },
+  "files": [
+    "dist"
+  ]
+}
