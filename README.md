@@ -29,6 +29,20 @@ Voor een realistische simulatie van een extern project staat een voorbeeld-app i
 Deze app zit bewust buiten `pnpm-workspace.yaml` zodat er geen `workspace:*`
 linking plaatsvindt en de setup dichter bij een echte consumer ligt.
 
+### Doel van de voorbeeldapp
+
+- consumeert gepubliceerde `@rgrmdesign` packages zoals een extern project
+- valideert React + Vite + TypeScript integratie
+- werkt als smoke test voor package releases
+
+### Gebruik
+
+- Start lokaal: `pnpm dev:consumer`
+- Typecheck: `pnpm typecheck:consumer`
+- Productiebuild: `pnpm build:consumer`
+
+Zie ook de app-specifieke documentatie: `examples/react-vite-consumer/README.md`.
+
 ## Releasen en changelog
 
 Deze repo gebruikt [Changesets](https://github.com/changesets/changesets) voor packageversies en changelogs.
