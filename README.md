@@ -57,3 +57,15 @@ Voorbeeld:
 - Gebruik bij voorkeur npm trusted publishing (OIDC) op package-niveau.
 - Tot OIDC volledig actief is: gebruik `NPM_TOKEN` als environment secret `publish`, met korte levensduur.
 - Verwijder tijdelijke tokens direct na succesvolle publicatie.
+
+## Storybook hosting en previews
+
+- Productie Storybook wordt gedeployed via `.github/workflows/storybook-pages.yml` naar GitHub Pages bij elke push naar `main`.
+- PR previews draaien via `.github/workflows/chromatic.yml`.
+- Vereiste GitHub secret voor previews: `CHROMATIC_PROJECT_TOKEN`.
+
+### Eenmalige GitHub Pages setup
+
+1. Ga naar repository **Settings** > **Pages**.
+2. Kies **Build and deployment** op **GitHub Actions**.
+3. Na de eerste succesvolle run staat de publieke Storybook URL in de `deploy` job output.
