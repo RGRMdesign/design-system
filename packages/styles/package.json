@@ -1,6 +1,6 @@
 {
   "name": "@rgrmdesign/ds-styles",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "private": false,
   "publishConfig": {
     "access": "public"
@@ -17,5 +17,7 @@
   "scripts": {
     "build": "echo 'No build step'"
   },
-  "files": ["src"]
+  "files": [
+    "src"
+  ]
 }
