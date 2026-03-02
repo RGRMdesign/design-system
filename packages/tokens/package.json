@@ -1,7 +1,10 @@
 {
   "name": "@rgrmdesign/ds-tokens",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "type": "module",
   "scripts": {
     "build": "style-dictionary build --config src/build.js",

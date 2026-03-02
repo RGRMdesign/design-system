@@ -19,10 +19,15 @@
     "typecheck:components-react": "pnpm --filter @rgrmdesign/ds-components-react exec tsc --noEmit -p tsconfig.json",
     "typecheck:storybook": "pnpm --filter storybook exec tsc --noEmit -p tsconfig.json",
     "verify": "pnpm run lint && pnpm run typecheck && pnpm run build && pnpm run build:storybook",
+    "changeset": "changeset add",
+    "changeset:version": "changeset version",
+    "changeset:publish": "changeset publish",
+    "changeset:status": "changeset status --since origin/main",
     "format": "prettier . --write",
     "format:check": "prettier . --check"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.29.8",
     "@eslint/js": "^9.39.3",
     "@types/node": "^25.3.3",
     "ajv-cli": "^5.0.0",
