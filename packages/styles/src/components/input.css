@@ -5,30 +5,30 @@
 .ds-input {
   display: block;
   width: 100%;
-  padding: var(--ds-spacing-sm) var(--ds-spacing-md);
-  font-family: var(--ds-typography-font-family-sans);
-  font-size: var(--ds-typography-font-size-md);
+  padding: var(--ds-components-input-padding-y) var(--ds-components-input-padding-x);
+  font-family: var(--ds-components-input-font-family);
+  font-size: var(--ds-components-input-font-size);
   line-height: 1.25;
-  color: var(--ds-color-text-primary);
-  background-color: var(--ds-color-background-primary);
-  border: 1px solid var(--ds-color-border-default);
-  border-radius: var(--ds-radius-sm);
+  color: var(--ds-components-input-text-default);
+  background-color: var(--ds-components-input-background-default);
+  border: var(--ds-components-input-border-width) solid var(--ds-components-input-border-default);
+  border-radius: var(--ds-components-input-border-radius);
 }
 
 .ds-input::placeholder {
-  color: var(--ds-color-text-secondary);
+  color: var(--ds-components-input-text-placeholder);
 }
 
 .ds-input:focus-visible {
-  outline: var(--ds-focus-ring-width) solid var(--ds-color-action-primary);
-  outline-offset: var(--ds-focus-ring-offset);
+  outline: var(--ds-components-input-focus-ring-width) solid var(--ds-components-input-focus-ring-color);
+  outline-offset: var(--ds-components-input-focus-ring-offset);
 }
 
 .ds-input[aria-invalid="true"] {
-  border-color: var(--ds-color-border-error);
+  border-color: var(--ds-components-input-border-invalid);
 }
 
 .ds-input[disabled] {
-  opacity: 0.6;
+  opacity: var(--ds-components-input-disabled-opacity);
   cursor: not-allowed;
 }

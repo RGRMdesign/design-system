@@ -7,7 +7,7 @@ const meta: Meta = {
     layout: 'padded',
     docs: {
       description: {
-        component: 'Design token color palette. Values are defined in `@rgrmdesign/ds-tokens` and exposed as CSS custom properties (e.g. `--ds-color-background-primary`).',
+        component: 'Design token color palette across primitive and semantic layers. Values are exposed as CSS custom properties (e.g. `--ds-semantic-color-background-canvas`).',
       },
     },
   },
@@ -17,20 +17,24 @@ export default meta;
 
 const colorGroups = [
   {
-    name: 'Background',
-    tokens: ['--ds-color-background-primary', '--ds-color-background-secondary'],
+    name: 'Semantic Background',
+    tokens: ['--ds-semantic-color-background-canvas', '--ds-semantic-color-background-subtle'],
   },
   {
-    name: 'Text',
-    tokens: ['--ds-color-text-primary', '--ds-color-text-secondary'],
+    name: 'Semantic Text',
+    tokens: ['--ds-semantic-color-text-primary', '--ds-semantic-color-text-secondary'],
   },
   {
-    name: 'Action',
-    tokens: ['--ds-color-action-primary', '--ds-color-action-primary-hover'],
+    name: 'Semantic Action',
+    tokens: ['--ds-semantic-color-action-primary-default', '--ds-semantic-color-action-primary-hover'],
   },
   {
-    name: 'Border',
-    tokens: ['--ds-color-border-default', '--ds-color-border-error'],
+    name: 'Semantic Border',
+    tokens: ['--ds-semantic-color-border-default', '--ds-semantic-color-border-danger'],
+  },
+  {
+    name: 'Primitive Neutral',
+    tokens: ['--ds-primitives-color-neutral-0', '--ds-primitives-color-gray-900'],
   },
 ];
 

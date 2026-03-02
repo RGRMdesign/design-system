@@ -86,7 +86,7 @@ export const Invalid: StoryObj<typeof Input> = {
         Email
       </label>
       <Input id="input-invalid" {...args} />
-      <div id="err-msg" role="alert" style={{ fontSize: 12, color: 'var(--ds-color-border-error)', marginTop: 4 }}>
+      <div id="err-msg" role="alert" style={{ fontSize: 12, color: 'var(--ds-semantic-color-border-danger)', marginTop: 4 }}>
         Please enter a valid email.
       </div>
     </div>

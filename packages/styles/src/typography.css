@@ -3,15 +3,15 @@
  * Uses token-driven font family, sizes and weights.
  */
 body {
-  font-family: var(--ds-typography-font-family-sans);
-  font-size: var(--ds-typography-font-size-md);
-  font-weight: var(--ds-typography-font-weight-normal);
+  font-family: var(--ds-semantic-typography-body-font-family);
+  font-size: var(--ds-semantic-typography-body-font-size);
+  font-weight: var(--ds-semantic-typography-body-font-weight);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: var(--ds-typography-font-weight-bold);
-  margin: 0 0 var(--ds-spacing-sm);
+  font-weight: var(--ds-semantic-typography-heading-font-weight);
+  margin: 0 0 var(--ds-primitives-spacing-200);
 }
 
-h1 { font-size: var(--ds-typography-font-size-lg); }
-h2, h3 { font-size: var(--ds-typography-font-size-md); }
+h1 { font-size: var(--ds-semantic-typography-heading-font-size-h1); }
+h2, h3 { font-size: var(--ds-semantic-typography-heading-font-size-h2); }

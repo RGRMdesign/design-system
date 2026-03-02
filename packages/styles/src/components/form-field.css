@@ -6,13 +6,13 @@
 .ds-form-field {
   display: flex;
   flex-direction: column;
-  gap: var(--ds-spacing-xs);
+  gap: var(--ds-components-form-field-gap);
 }
 
 .ds-form-field__label {
-  font-size: var(--ds-typography-font-size-md);
-  font-weight: var(--ds-typography-font-weight-normal);
-  color: var(--ds-color-text-primary);
+  font-size: var(--ds-components-form-field-label-font-size);
+  font-weight: var(--ds-components-form-field-label-font-weight);
+  color: var(--ds-components-form-field-label-text-color);
 }
 
 .ds-form-field__input-wrapper {
@@ -20,11 +20,11 @@
 }
 
 .ds-form-field__help {
-  font-size: var(--ds-typography-font-size-sm);
-  color: var(--ds-color-text-secondary);
+  font-size: var(--ds-components-form-field-help-font-size);
+  color: var(--ds-components-form-field-help-text-color);
 }
 
 .ds-form-field__error {
-  font-size: var(--ds-typography-font-size-sm);
-  color: var(--ds-color-border-error);
+  font-size: var(--ds-components-form-field-error-font-size);
+  color: var(--ds-components-form-field-error-text-color);
 }

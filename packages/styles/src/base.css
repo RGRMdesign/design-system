@@ -12,9 +12,9 @@
 
 body {
   margin: 0;
-  font-family: var(--ds-typography-font-family-sans);
-  font-size: var(--ds-typography-font-size-md);
-  font-weight: var(--ds-typography-font-weight-normal);
-  color: var(--ds-color-text-primary);
-  background-color: var(--ds-color-background-primary);
+  font-family: var(--ds-components-base-body-font-family);
+  font-size: var(--ds-components-base-body-font-size);
+  font-weight: var(--ds-components-base-body-font-weight);
+  color: var(--ds-components-base-body-text-color);
+  background-color: var(--ds-components-base-body-background-color);
 }

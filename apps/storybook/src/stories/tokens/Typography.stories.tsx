@@ -7,7 +7,7 @@ const meta: Meta = {
     layout: 'padded',
     docs: {
       description: {
-        component: 'Typography tokens: font family, sizes, and weights. Used via CSS variables (e.g. `--ds-typography-font-size-md`).',
+        component: 'Typography tokens across semantic and primitive layers. Used via CSS variables (e.g. `--ds-semantic-typography-body-font-size`).',
       },
     },
   },
@@ -17,7 +17,7 @@ export default meta;
 
 export const FontFamily: StoryObj = {
   render: () => (
-    <p style={{ fontFamily: 'var(--ds-typography-font-family-sans)' }}>
+    <p style={{ fontFamily: 'var(--ds-semantic-typography-body-font-family)' }}>
       The quick brown fox jumps over the lazy dog. (system-ui, sans-serif)
     </p>
   ),
@@ -26,9 +26,9 @@ export const FontFamily: StoryObj = {
 export const FontSizes: StoryObj = {
   render: () => (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-      <p style={{ fontSize: 'var(--ds-typography-font-size-sm)' }}>Small (--ds-typography-font-size-sm)</p>
-      <p style={{ fontSize: 'var(--ds-typography-font-size-md)' }}>Medium (--ds-typography-font-size-md)</p>
-      <p style={{ fontSize: 'var(--ds-typography-font-size-lg)' }}>Large (--ds-typography-font-size-lg)</p>
+      <p style={{ fontSize: 'var(--ds-primitives-typography-font-size-100)' }}>Small (--ds-primitives-typography-font-size-100)</p>
+      <p style={{ fontSize: 'var(--ds-semantic-typography-body-font-size)' }}>Body (--ds-semantic-typography-body-font-size)</p>
+      <p style={{ fontSize: 'var(--ds-semantic-typography-heading-font-size-h1)' }}>Heading H1 (--ds-semantic-typography-heading-font-size-h1)</p>
     </div>
   ),
 };
@@ -36,8 +36,8 @@ export const FontSizes: StoryObj = {
 export const FontWeights: StoryObj = {
   render: () => (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-      <p style={{ fontWeight: 'var(--ds-typography-font-weight-normal)' }}>Normal (400)</p>
-      <p style={{ fontWeight: 'var(--ds-typography-font-weight-bold)' }}>Bold (700)</p>
+      <p style={{ fontWeight: 'var(--ds-semantic-typography-body-font-weight)' }}>Body (400)</p>
+      <p style={{ fontWeight: 'var(--ds-semantic-typography-heading-font-weight)' }}>Heading (700)</p>
     </div>
   ),
 };

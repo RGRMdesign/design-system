@@ -7,7 +7,7 @@ const meta: Meta = {
     layout: 'padded',
     docs: {
       description: {
-        component: 'Spacing scale used for padding, margin, and gaps. CSS variables: `--ds-spacing-xs` through `--ds-spacing-lg`.',
+        component: 'Primitive spacing scale used for padding, margin, and gaps. CSS variables: `--ds-primitives-spacing-100` through `--ds-primitives-spacing-400`.',
       },
     },
   },
@@ -16,10 +16,10 @@ const meta: Meta = {
 export default meta;
 
 const spacingTokens = [
-  { name: 'xs', var: '--ds-spacing-xs' },
-  { name: 'sm', var: '--ds-spacing-sm' },
-  { name: 'md', var: '--ds-spacing-md' },
-  { name: 'lg', var: '--ds-spacing-lg' },
+  { name: '100', var: '--ds-primitives-spacing-100' },
+  { name: '200', var: '--ds-primitives-spacing-200' },
+  { name: '300', var: '--ds-primitives-spacing-300' },
+  { name: '400', var: '--ds-primitives-spacing-400' },
 ];
 
 export const Scale: StoryObj = {
@@ -32,7 +32,7 @@ export const Scale: StoryObj = {
               width: `var(${v})`,
               height: `var(${v})`,
               minHeight: 8,
-              backgroundColor: 'var(--ds-color-action-primary)',
+              backgroundColor: 'var(--ds-semantic-color-action-primary-default)',
               opacity: 0.8,
               borderRadius: 4,
             }}
