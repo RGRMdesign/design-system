@@ -1,5 +1,11 @@
 # @rgrmdesign/ds-tokens
 
+## 0.2.0
+
+### Minor Changes
+
+- 58b0a92: migrate tokens to a layered primitives/semantic/components structure and align styles to the new css variable naming.
+
 ## 0.1.0
 
 ### Minor Changes
