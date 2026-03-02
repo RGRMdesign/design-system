@@ -14,9 +14,20 @@ Gebruik in de projectroot `nvm use` of `fnm use` om de juiste Node-versie te act
 - `pnpm install` – dependencies installeren
 - `pnpm build` – alle packages bouwen
 - `pnpm dev` – build + Storybook starten op http://localhost:6006
+- `pnpm dev:consumer` – React/Vite consumer example installeren + starten
+- `pnpm typecheck:consumer` – React/Vite consumer example typechecken
+- `pnpm build:consumer` – React/Vite consumer example installeren + builden
 - `pnpm verify` – lint + typecheck + build + Storybook build
 - `pnpm changeset` – release-entry toevoegen voor packagewijzigingen
 - `pnpm changeset:status` – controle van pending releasewijzigingen
+
+## Consumer example app
+
+Voor een realistische simulatie van een extern project staat een voorbeeld-app in
+`examples/react-vite-consumer`.
+
+Deze app zit bewust buiten `pnpm-workspace.yaml` zodat er geen `workspace:*`
+linking plaatsvindt en de setup dichter bij een echte consumer ligt.
 
 ## Releasen en changelog
 
