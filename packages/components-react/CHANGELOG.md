@@ -1,5 +1,12 @@
 # @rgrmdesign/ds-components-react
 
+## 0.1.2
+
+### Patch Changes
+
+- Updated dependencies [2fb7e64]
+  - @rgrmdesign/ds-styles@0.3.0
+
 ## 0.1.1
 
 ### Patch Changes
