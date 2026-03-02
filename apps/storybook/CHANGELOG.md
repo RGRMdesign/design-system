@@ -1,5 +1,14 @@
 # @rgrmdesign/storybook
 
+## 0.0.4
+
+### Patch Changes
+
+- Updated dependencies [2fb7e64]
+  - @rgrmdesign/ds-styles@0.3.0
+  - @rgrmdesign/ds-tokens@0.3.0
+  - @rgrmdesign/ds-components-react@0.1.2
+
 ## 0.0.3
 
 ### Patch Changes

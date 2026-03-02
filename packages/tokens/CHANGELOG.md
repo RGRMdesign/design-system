@@ -1,5 +1,11 @@
 # @rgrmdesign/ds-tokens
 
+## 0.3.0
+
+### Minor Changes
+
+- 2fb7e64: change token structure
+
 ## 0.2.0
 
 ### Minor Changes
