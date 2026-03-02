@@ -1,0 +1,12 @@
+{
+  "tokenSetOrder": [
+    "core/primitives",
+    "core/semantic",
+    "themes/light/semantic",
+    "themes/dark/semantic",
+    "components/input",
+    "components/form-field",
+    "components/base",
+    "components/button"
+  ]
+}

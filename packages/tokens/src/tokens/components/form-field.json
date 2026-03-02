@@ -1,0 +1,44 @@
+{
+  "components": {
+    "formField": {
+      "gap": {
+        "$type": "dimension",
+        "$value": "{primitives.spacing.100}"
+      },
+      "label": {
+        "fontSize": {
+          "$type": "dimension",
+          "$value": "{semantic.typography.label.fontSize}"
+        },
+        "fontWeight": {
+          "$type": "number",
+          "$value": "{semantic.typography.label.fontWeight}"
+        },
+        "textColor": {
+          "$type": "color",
+          "$value": "{semantic.color.text.primary}"
+        }
+      },
+      "help": {
+        "fontSize": {
+          "$type": "dimension",
+          "$value": "{semantic.typography.caption.fontSize}"
+        },
+        "textColor": {
+          "$type": "color",
+          "$value": "{semantic.color.text.secondary}"
+        }
+      },
+      "error": {
+        "fontSize": {
+          "$type": "dimension",
+          "$value": "{semantic.typography.caption.fontSize}"
+        },
+        "textColor": {
+          "$type": "color",
+          "$value": "{semantic.color.border.danger}"
+        }
+      }
+    }
+  }
+}

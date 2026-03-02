@@ -1,6 +1,11 @@
 /** Style Dictionary 4 config: W3C DTCG tokens → CSS variables (--ds-*) + JSON */
 export default {
-  source: ['src/tokens/**/*.json'],
+  // Only process token set files, exclude Tokens Studio metadata files ($*.json).
+  source: [
+    'src/tokens/core/**/*.json',
+    'src/tokens/components/**/*.json',
+    'src/tokens/themes/**/*.json',
+  ],
   platforms: {
     css: {
       transformGroup: 'css',

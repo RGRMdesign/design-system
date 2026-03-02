@@ -1,0 +1,80 @@
+{
+  "components": {
+    "input": {
+      "padding": {
+        "y": {
+          "$type": "dimension",
+          "$value": "{primitives.spacing.200}"
+        },
+        "x": {
+          "$type": "dimension",
+          "$value": "{primitives.spacing.300}"
+        }
+      },
+      "font": {
+        "family": {
+          "$type": "fontFamily",
+          "$value": "{semantic.typography.body.fontFamily}"
+        },
+        "size": {
+          "$type": "dimension",
+          "$value": "{semantic.typography.body.fontSize}"
+        }
+      },
+      "text": {
+        "default": {
+          "$type": "color",
+          "$value": "{semantic.color.text.primary}"
+        },
+        "placeholder": {
+          "$type": "color",
+          "$value": "{semantic.color.text.secondary}"
+        }
+      },
+      "background": {
+        "default": {
+          "$type": "color",
+          "$value": "{semantic.color.background.canvas}"
+        }
+      },
+      "border": {
+        "width": {
+          "$type": "dimension",
+          "$value": "1px"
+        },
+        "radius": {
+          "$type": "dimension",
+          "$value": "{primitives.radius.100}"
+        },
+        "default": {
+          "$type": "color",
+          "$value": "{semantic.color.border.default}"
+        },
+        "invalid": {
+          "$type": "color",
+          "$value": "{semantic.color.border.danger}"
+        }
+      },
+      "focus": {
+        "ringColor": {
+          "$type": "color",
+          "$value": "{semantic.color.action.primary.default}"
+        },
+        "ringWidth": {
+          "$type": "dimension",
+          "$value": "{semantic.focus.ring.width}"
+        },
+        "ringOffset": {
+          "$type": "dimension",
+          "$value": "{semantic.focus.ring.offset}"
+        }
+      },
+      "disabled": {
+        "opacity": {
+          "$type": "number",
+          "$value": 0.6
+        }
+      }
+    }
+  }
+}

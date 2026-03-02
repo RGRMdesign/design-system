@@ -1,0 +1,90 @@
+{
+  "components": {
+    "button": {
+      "padding": {
+        "y": {
+          "$type": "dimension",
+          "$value": "{primitives.spacing.200}"
+        },
+        "x": {
+          "$type": "dimension",
+          "$value": "{primitives.spacing.300}"
+        }
+      },
+      "font": {
+        "family": {
+          "$type": "fontFamily",
+          "$value": "{semantic.typography.body.fontFamily}"
+        },
+        "size": {
+          "$type": "dimension",
+          "$value": "{semantic.typography.body.fontSize}"
+        },
+        "weight": {
+          "$type": "number",
+          "$value": "{semantic.typography.body.fontWeight}"
+        }
+      },
+      "border": {
+        "width": {
+          "$type": "dimension",
+          "$value": "1px"
+        },
+        "radius": {
+          "$type": "dimension",
+          "$value": "{primitives.radius.200}"
+        },
+        "default": {
+          "$type": "color",
+          "$value": "{semantic.color.border.default}"
+        }
+      },
+      "text": {
+        "default": {
+          "$type": "color",
+          "$value": "{semantic.color.text.primary}"
+        },
+        "primary": {
+          "$type": "color",
+          "$value": "{semantic.color.text.inverse}"
+        }
+      },
+      "background": {
+        "default": {
+          "$type": "color",
+          "$value": "{semantic.color.background.subtle}"
+        },
+        "primary": {
+          "default": {
+            "$type": "color",
+            "$value": "{semantic.color.action.primary.default}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{semantic.color.action.primary.hover}"
+          }
+        }
+      },
+      "focus": {
+        "ringColor": {
+          "$type": "color",
+          "$value": "{semantic.color.action.primary.default}"
+        },
+        "ringWidth": {
+          "$type": "dimension",
+          "$value": "{semantic.focus.ring.width}"
+        },
+        "ringOffset": {
+          "$type": "dimension",
+          "$value": "{semantic.focus.ring.offset}"
+        }
+      },
+      "disabled": {
+        "opacity": {
+          "$type": "number",
+          "$value": 0.6
+        }
+      }
+    }
+  }
+}

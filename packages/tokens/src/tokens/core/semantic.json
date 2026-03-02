@@ -1,0 +1,112 @@
+{
+  "semantic": {
+    "color": {
+      "background": {
+        "canvas": {
+          "$type": "color",
+          "$value": "{primitives.color.neutral.0}"
+        },
+        "subtle": {
+          "$type": "color",
+          "$value": "{primitives.color.surface.subtle}"
+        }
+      },
+      "text": {
+        "primary": {
+          "$type": "color",
+          "$value": "{primitives.color.gray.900}"
+        },
+        "secondary": {
+          "$type": "color",
+          "$value": "{primitives.color.gray.600}"
+        },
+        "inverse": {
+          "$type": "color",
+          "$value": "{primitives.color.neutral.0}"
+        }
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{primitives.color.gray.300}"
+        },
+        "danger": {
+          "$type": "color",
+          "$value": "{primitives.color.red.600}"
+        }
+      },
+      "action": {
+        "primary": {
+          "default": {
+            "$type": "color",
+            "$value": "{primitives.color.blue.600}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{primitives.color.blue.700}"
+          }
+        }
+      }
+    },
+    "typography": {
+      "body": {
+        "fontFamily": {
+          "$type": "fontFamily",
+          "$value": "{primitives.typography.fontFamily.sans}"
+        },
+        "fontSize": {
+          "$type": "dimension",
+          "$value": "{primitives.typography.fontSize.200}"
+        },
+        "fontWeight": {
+          "$type": "number",
+          "$value": "{primitives.typography.fontWeight.400}"
+        }
+      },
+      "label": {
+        "fontSize": {
+          "$type": "dimension",
+          "$value": "{primitives.typography.fontSize.200}"
+        },
+        "fontWeight": {
+          "$type": "number",
+          "$value": "{primitives.typography.fontWeight.400}"
+        }
+      },
+      "caption": {
+        "fontSize": {
+          "$type": "dimension",
+          "$value": "{primitives.typography.fontSize.100}"
+        }
+      },
+      "heading": {
+        "fontWeight": {
+          "$type": "number",
+          "$value": "{primitives.typography.fontWeight.700}"
+        },
+        "fontSize": {
+          "h1": {
+            "$type": "dimension",
+            "$value": "{primitives.typography.fontSize.300}"
+          },
+          "h2": {
+            "$type": "dimension",
+            "$value": "{primitives.typography.fontSize.200}"
+          }
+        }
+      }
+    },
+    "focus": {
+      "ring": {
+        "width": {
+          "$type": "dimension",
+          "$value": "{primitives.focus.ring.width}"
+        },
+        "offset": {
+          "$type": "dimension",
+          "$value": "{primitives.focus.ring.offset}"
+        }
+      }
+    }
+  }
+}

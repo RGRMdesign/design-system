@@ -1,0 +1,28 @@
+{
+  "components": {
+    "base": {
+      "body": {
+        "fontFamily": {
+          "$type": "fontFamily",
+          "$value": "{semantic.typography.body.fontFamily}"
+        },
+        "fontSize": {
+          "$type": "dimension",
+          "$value": "{semantic.typography.body.fontSize}"
+        },
+        "fontWeight": {
+          "$type": "number",
+          "$value": "{semantic.typography.body.fontWeight}"
+        },
+        "textColor": {
+          "$type": "color",
+          "$value": "{semantic.color.text.primary}"
+        },
+        "backgroundColor": {
+          "$type": "color",
+          "$value": "{semantic.color.background.canvas}"
+        }
+      }
+    }
+  }
+}
