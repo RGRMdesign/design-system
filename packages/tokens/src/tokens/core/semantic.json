@@ -37,61 +37,77 @@
       },
       "action": {
         "primary": {
-          "default": {
-            "$type": "color",
-            "$value": "{primitives.color.blue.600}"
+          "background": {
+            "default": {
+              "$type": "color",
+              "$value": "{primitives.color.blue.600}"
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{primitives.color.blue.700}"
+            }
           },
-          "hover": {
-            "$type": "color",
-            "$value": "{primitives.color.blue.700}"
+          "foreground": {
+            "default": {
+              "$type": "color",
+              "$value": "{semantic.color.text.inverse}"
+            }
           }
         }
       }
     },
     "typography": {
       "body": {
-        "fontFamily": {
-          "$type": "fontFamily",
-          "$value": "{primitives.typography.fontFamily.sans}"
-        },
-        "fontSize": {
-          "$type": "dimension",
-          "$value": "{primitives.typography.fontSize.200}"
-        },
-        "fontWeight": {
-          "$type": "number",
-          "$value": "{primitives.typography.fontWeight.400}"
+        "font": {
+          "family": {
+            "$type": "fontFamily",
+            "$value": "{primitives.typography.font.family.sans}"
+          },
+          "size": {
+            "$type": "fontSizes",
+            "$value": "{primitives.typography.font.size.200}"
+          },
+          "weight": {
+            "$type": "number",
+            "$value": "{primitives.typography.font.weight.400}"
+          }
         }
       },
       "label": {
-        "fontSize": {
-          "$type": "dimension",
-          "$value": "{primitives.typography.fontSize.200}"
-        },
-        "fontWeight": {
-          "$type": "number",
-          "$value": "{primitives.typography.fontWeight.400}"
+        "font": {
+          "size": {
+            "$type": "fontSizes",
+            "$value": "{primitives.typography.font.size.200}"
+          },
+          "weight": {
+            "$type": "number",
+            "$value": "{primitives.typography.font.weight.400}"
+          }
         }
       },
       "caption": {
-        "fontSize": {
-          "$type": "dimension",
-          "$value": "{primitives.typography.fontSize.100}"
+        "font": {
+          "size": {
+            "$type": "fontSizes",
+            "$value": "{primitives.typography.font.size.100}"
+          }
         }
       },
       "heading": {
-        "fontWeight": {
-          "$type": "number",
-          "$value": "{primitives.typography.fontWeight.700}"
-        },
-        "fontSize": {
-          "h1": {
-            "$type": "dimension",
-            "$value": "{primitives.typography.fontSize.300}"
+        "font": {
+          "weight": {
+            "$type": "number",
+            "$value": "{primitives.typography.font.weight.700}"
           },
-          "h2": {
-            "$type": "dimension",
-            "$value": "{primitives.typography.fontSize.200}"
+          "size": {
+            "h1": {
+              "$type": "fontSizes",
+              "$value": "{primitives.typography.font.size.300}"
+            },
+            "h2": {
+              "$type": "fontSizes",
+              "$value": "{primitives.typography.font.size.200}"
+            }
           }
         }
       }

@@ -45,34 +45,36 @@
       }
     },
     "typography": {
-      "fontFamily": {
-        "sans": {
-          "$type": "fontFamily",
-          "$value": "system-ui, sans-serif"
-        }
-      },
-      "fontSize": {
-        "100": {
-          "$type": "dimension",
-          "$value": "0.875rem"
+      "font": {
+        "family": {
+          "sans": {
+            "$type": "fontFamily",
+            "$value": "system-ui, sans-serif"
+          }
         },
-        "200": {
-          "$type": "dimension",
-          "$value": "1rem"
+        "size": {
+          "100": {
+            "$type": "fontSizes",
+            "$value": "0.875rem"
+          },
+          "200": {
+            "$type": "fontSizes",
+            "$value": "1rem"
+          },
+          "300": {
+            "$type": "fontSizes",
+            "$value": "1.25rem"
+          }
         },
-        "300": {
-          "$type": "dimension",
-          "$value": "1.25rem"
-        }
-      },
-      "fontWeight": {
-        "400": {
-          "$type": "number",
-          "$value": 400
-        },
-        "700": {
-          "$type": "number",
-          "$value": 700
+        "weight": {
+          "400": {
+            "$type": "number",
+            "$value": 400
+          },
+          "700": {
+            "$type": "number",
+            "$value": 700
+          }
         }
       }
     },

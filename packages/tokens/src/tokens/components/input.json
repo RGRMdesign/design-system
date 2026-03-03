@@ -14,11 +14,11 @@
       "font": {
         "family": {
           "$type": "fontFamily",
-          "$value": "{semantic.typography.body.fontFamily}"
+          "$value": "{semantic.typography.body.font.family}"
         },
         "size": {
-          "$type": "dimension",
-          "$value": "{semantic.typography.body.fontSize}"
+          "$type": "fontSizes",
+          "$value": "{semantic.typography.body.font.size}"
         }
       },
       "text": {
@@ -56,17 +56,19 @@
         }
       },
       "focus": {
-        "ringColor": {
-          "$type": "color",
-          "$value": "{semantic.color.action.primary.default}"
-        },
-        "ringWidth": {
-          "$type": "dimension",
-          "$value": "{semantic.focus.ring.width}"
-        },
-        "ringOffset": {
-          "$type": "dimension",
-          "$value": "{semantic.focus.ring.offset}"
+        "ring": {
+          "color": {
+            "$type": "color",
+            "$value": "{semantic.color.action.primary.background.default}"
+          },
+          "width": {
+            "$type": "dimension",
+            "$value": "{semantic.focus.ring.width}"
+          },
+          "offset": {
+            "$type": "dimension",
+            "$value": "{semantic.focus.ring.offset}"
+          }
         }
       },
       "disabled": {

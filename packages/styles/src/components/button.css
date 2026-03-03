@@ -7,41 +7,46 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: var(--ds-components-button-padding-y) var(--ds-components-button-padding-x);
-  font-family: var(--ds-components-button-font-family);
-  font-size: var(--ds-components-button-font-size);
-  font-weight: var(--ds-components-button-font-weight);
+  padding: var(--ds-components-button-base-padding-y) var(--ds-components-button-base-padding-x);
+  font-family: var(--ds-components-button-base-font-family);
+  font-size: var(--ds-components-button-base-font-size);
+  font-weight: var(--ds-components-button-base-font-weight);
   line-height: 1.25;
-  border: var(--ds-components-button-border-width) solid var(--ds-components-button-border-default);
-  border-radius: var(--ds-components-button-border-radius);
+  border: var(--ds-components-button-base-border-width) solid var(--ds-components-button-base-border-default);
+  border-radius: var(--ds-components-button-base-border-radius);
   cursor: pointer;
-  background-color: var(--ds-components-button-background-default);
-  color: var(--ds-components-button-text-default);
+  background-color: var(--ds-components-button-secondary-background-default);
+  color: var(--ds-components-button-secondary-text-default);
 }
 
 .ds-button:focus-visible {
-  outline: var(--ds-components-button-focus-ring-width) solid var(--ds-components-button-focus-ring-color);
-  outline-offset: var(--ds-components-button-focus-ring-offset);
+  outline: var(--ds-components-button-base-focus-ring-width) solid var(--ds-components-button-secondary-focus-ring-color);
+  outline-offset: var(--ds-components-button-base-focus-ring-offset);
 }
 
 .ds-button--primary {
-  background-color: var(--ds-components-button-background-primary-default);
-  color: var(--ds-components-button-text-primary);
-  border-color: var(--ds-components-button-background-primary-default);
+  background-color: var(--ds-components-button-primary-background-default);
+  color: var(--ds-components-button-primary-text-default);
+  border-color: var(--ds-components-button-primary-border-default);
+}
+
+.ds-button--primary:focus-visible {
+  outline-color: var(--ds-components-button-primary-focus-ring-color);
 }
 
 .ds-button--primary:hover:not([disabled]) {
-  background-color: var(--ds-components-button-background-primary-hover);
-  border-color: var(--ds-components-button-background-primary-hover);
+  background-color: var(--ds-components-button-primary-background-hover);
+  border-color: var(--ds-components-button-primary-border-hover);
 }
 
 .ds-button--secondary {
-  background-color: var(--ds-components-button-background-default);
-  color: var(--ds-components-button-text-default);
+  background-color: var(--ds-components-button-secondary-background-default);
+  color: var(--ds-components-button-secondary-text-default);
+  border-color: var(--ds-components-button-secondary-border-default);
 }
 
 .ds-button[disabled],
 .ds-button.is-loading {
-  opacity: var(--ds-components-button-disabled-opacity);
+  opacity: var(--ds-components-button-base-disabled-opacity);
   cursor: not-allowed;
 }

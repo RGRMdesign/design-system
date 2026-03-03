@@ -2,25 +2,31 @@
   "components": {
     "base": {
       "body": {
-        "fontFamily": {
-          "$type": "fontFamily",
-          "$value": "{semantic.typography.body.fontFamily}"
+        "font": {
+          "family": {
+            "$type": "fontFamily",
+            "$value": "{semantic.typography.body.font.family}"
+          },
+          "size": {
+            "$type": "fontSizes",
+            "$value": "{semantic.typography.body.font.size}"
+          },
+          "weight": {
+            "$type": "number",
+            "$value": "{semantic.typography.body.font.weight}"
+          }
         },
-        "fontSize": {
-          "$type": "dimension",
-          "$value": "{semantic.typography.body.fontSize}"
+        "text": {
+          "color": {
+            "$type": "color",
+            "$value": "{semantic.color.text.primary}"
+          }
         },
-        "fontWeight": {
-          "$type": "number",
-          "$value": "{semantic.typography.body.fontWeight}"
-        },
-        "textColor": {
-          "$type": "color",
-          "$value": "{semantic.color.text.primary}"
-        },
-        "backgroundColor": {
-          "$type": "color",
-          "$value": "{semantic.color.background.canvas}"
+        "background": {
+          "color": {
+            "$type": "color",
+            "$value": "{semantic.color.background.canvas}"
+          }
         }
       }
     }

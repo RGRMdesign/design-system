@@ -6,37 +6,49 @@
         "$value": "{primitives.spacing.100}"
       },
       "label": {
-        "fontSize": {
-          "$type": "dimension",
-          "$value": "{semantic.typography.label.fontSize}"
+        "font": {
+          "size": {
+            "$type": "fontSizes",
+            "$value": "{semantic.typography.label.font.size}"
+          },
+          "weight": {
+            "$type": "number",
+            "$value": "{semantic.typography.label.font.weight}"
+          }
         },
-        "fontWeight": {
-          "$type": "number",
-          "$value": "{semantic.typography.label.fontWeight}"
-        },
-        "textColor": {
-          "$type": "color",
-          "$value": "{semantic.color.text.primary}"
+        "text": {
+          "color": {
+            "$type": "color",
+            "$value": "{semantic.color.text.primary}"
+          }
         }
       },
       "help": {
-        "fontSize": {
-          "$type": "dimension",
-          "$value": "{semantic.typography.caption.fontSize}"
+        "font": {
+          "size": {
+            "$type": "fontSizes",
+            "$value": "{semantic.typography.caption.font.size}"
+          }
         },
-        "textColor": {
-          "$type": "color",
-          "$value": "{semantic.color.text.secondary}"
+        "text": {
+          "color": {
+            "$type": "color",
+            "$value": "{semantic.color.text.secondary}"
+          }
         }
       },
       "error": {
-        "fontSize": {
-          "$type": "dimension",
-          "$value": "{semantic.typography.caption.fontSize}"
+        "font": {
+          "size": {
+            "$type": "fontSizes",
+            "$value": "{semantic.typography.caption.font.size}"
+          }
         },
-        "textColor": {
-          "$type": "color",
-          "$value": "{semantic.color.border.danger}"
+        "text": {
+          "color": {
+            "$type": "color",
+            "$value": "{semantic.color.border.danger}"
+          }
         }
       }
     }
